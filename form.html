@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+<form id="form">
+    <fieldset>
+        <legend>Регистрация</legend>
+        <ul>
+            <li>
+                <input id="name" type="text" name="name" placeholder="Enter your name..."/>
+            </li>
+            <li>
+                <input id="email" type="email" name="email" placeholder="Enter your email..."/>
+            </li>
+            <li>
+                <input id="phone" type="tel" name="phone" placeholder="Enter your phone..."/>
+            </li>
+        </ul>
+        <p>Hello<span id="user"></span>!</p>
+    </fieldset>
+
+    <fieldset>
+        <label for="frm">
+            <p>Рассказать о формах в книге</p>
+            <select id="frm" name="frm">
+                <option value="frm1">Site Frequency</option>
+                <option value="frm2">Site Reach</option>
+                <option value="frm3">Targeting</option>
+                <option value="frm4">Traffic</option>
+            </select>
+        </label>
+
+        <label class="label" for="lang">
+            <p>Languages</p>
+            <select id="lang" name="language">
+                <option value="Ukrainian">Ukrainian</option>
+                <option value="Russian">Russian</option>
+                <option value="English">English</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Сколько книг вы прочитали за свою жизнь:</legend>
+        <ul>
+            <li>
+                <label for="min">
+                    <input id="min" type="radio" name="books" value="0-10">0-10
+                </label>
+            </li>
+
+            <li>
+                <label for="low">
+                    <input id="low" type="radio" name="books" value="10-20">10-20
+                </label>
+            </li>
+
+            <li>
+                <label for="middle">
+                    <input id="middle" type="radio" name="books" value="21-50">21-50
+                </label>
+            </li>
+
+            <li>
+                <label for="high">
+                    <input id="high" type="radio" name="books" value="50+">50+
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Что вы обычно делаете на выходных:</legend>
+
+        <ul>
+            <li>
+                <label for="sleep">
+                    <input id="sleep" type="checkbox"> Сплю
+                </label>
+            </li>
+
+            <li>
+                <label for="walk">
+                    <input id="walk" type="checkbox"> Гуляю с друзьями
+                </label>
+            </li>
+
+            <li>
+                <label for="fishing">
+                    <input id="fishing" type="checkbox"> Хожу на рыбалку
+                </label>
+            </li>
+
+            <li>
+                <label for="games">
+                    <input id="games" type="checkbox"> Играю в игры
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <button id="submit" type="submit">Submit</button>
+</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

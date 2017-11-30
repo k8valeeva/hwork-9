@@ -1,0 +1,34 @@
+button{
+  cursor: pointer;
+  width: 200px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.new-btn-color{
+  background: #9597cc;
+}
+
+.remove-class{
+  background: #9597cc;
+  width: 300px;
+}
+
+.toggle-effect{
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #ace0a9;
+}
+
+.clone-this{
+  background: darkred;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+
+  button{
+    background: slategrey;
+  }
+}
