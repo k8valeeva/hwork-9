@@ -1,82 +1,82 @@
-$(document).ready(function () {
+$(document).ready(function (){
 
-    $('.add-class').click (function () {
+    $('.add-class').on('click', function (){
         $(this).addClass('new-btn-color')
     });
 
 
-    $('.remove-class').click (function () {
+    $('.remove-class').on('click', function (){
         $(this).removeClass('remove-class')
     });
 
 
-    $('.toggle-class').click (function () {
+    $('.toggle-class').on('click', function (){
         $(this).toggleClass('toggle-effect')
     });
 
 
-    $('.get-attr').click (function () {
+    $('.get-attr').on('click', function (){
         alert( $(this).attr("type"));
     });
 
 
-    $('.set-attr').click (function () {
+    $('.set-attr').on('click', function (){
         let attr = $(this).attr('type', 'button');
     });
 
 
-    $('.alert').click (function () {
+    $('.alert').on('click', function (){
         alert ('alertOnClick');
     });
 
 
-    $('.trigger-alert').click(function () {
+    $('.trigger-alert').on('click', function (){
         alert('trigger-alert').trigger('click');
     });
 
 
-    $('.clone-this').click(function() {
+    $('.clone-this').on('click', function(){
         $(this).clone().appendTo('.container');
     });
 
 
-    $('.closest').click(function() {
+    $('.closest').on('click', function(){
         $('.clone-this').hide();
     });
 
 
-    $('#eachBtnText').click(function() {
+    $('#eachBtnText').on('click', function(){
         var a = $('button').text();
         console.log(a);
     });
 
 
-    $('#findMe').click(function(){
+    $('#findMe').on('click', function(){
         console.log($('body').find(this));
     });
 
 
-    $('#fadeInText').click(function(){
+    $('#fadeInText').on('click', function(){
         $('.fade-text').fadeIn();
     });
 
 
-    $('#fadeOutText').click(function () {
+    $('#fadeOutText').on('click', function (){
         $('.fade-out-text').fadeOut();
     });
 
 
-    $('#hideText').click(function(){
+    $('#hideText').on('click', function(){
         $('.hide-text').hide();
     });
 
 
-    $('#showText').click(function(){
+    $('#showText').on('click', function(){
         $('.show-text').show();
     });
 
 
-    $('#dataAboutMe').click(function(){
+    $('#dataAboutMe').on('click', function(){
         var btnInfo = [
             $(this).height(),
             $(this).width(),
@@ -91,22 +91,22 @@ $(document).ready(function () {
     });
 
 
-    $('.up').click(function(){
+    $('.up').on('click', function(){
         $('.slide').slideUp();
     });
 
 
-    $('.down').click(function(){
+    $('.down').on('click', function(){
         $('.slide').slideDown();
     });
 
 
-    $('.toggle-slide').click(function(){
+    $('.toggle-slide').on('click', function(){
         $('.slide').slideToggle();
     });
 
 
-    $('#detach').click(function(){
+    $('#detach').on('click', function(){
         $('.remove').detach();
     });
 
@@ -114,12 +114,12 @@ $(document).ready(function () {
 
 
 
-    $('input').change(function () {
+    $('input').change(function (){
         console.log($(this).val());
     });
 
 
-    $('#form').submit(function (event) {
+    $('#form').submit(function (event){
         event.preventDefault();
         $('#form').find('input, option').each(function(){
             console.log(this.name +  ' = ' + this.value);
@@ -137,7 +137,7 @@ $(document).ready(function () {
     });
 
 
-    $('#submit').keypress(function () {
+    $('#submit').keypress(function (){
         $('.wrapper').css('background-color', '#cac2c2')
     });
 });
